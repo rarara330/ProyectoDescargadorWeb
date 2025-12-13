@@ -1,0 +1,10 @@
+# Ignorar la carpeta de descargas que limpia el script mega.sh
+/pepe/
+/var/www/html/pepe/
+
+# Ignorar archivos temporales
+*.log
+*.tmp
+
+# Ignorar archivos de MegaCMD (si se generan)
+.mega
