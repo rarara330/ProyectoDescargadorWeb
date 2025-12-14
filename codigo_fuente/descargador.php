@@ -213,7 +213,7 @@
 
 
         // DIRECTORIO DE DESCARGAS (Usando la ruta pública acordada)
-	$HOME_DIR = "/var/www/html/Descargas/pepe";
+        $HOME_DIR = "/var/www/html/Descargas/pepe";
         
 
         // --- 2. Construcción del Comando ---
