@@ -8,7 +8,7 @@
 LOCAL_DIR="/var/www/html/Descargas/pepe"
 REMOTE_DIR="/pepe"
 # Asegúrate de que este usuario tenga la sesión de MEGA iniciada (con mega-login)
-USUARIO_REAL="raul" 
+USUARIO_REAL="wolf" 
 LOG_FILE="/tmp/mega_upload_pepe_$(date +%Y%m%d_%H%M%S).log"
 
 # 2. Verificación de Superusuario (Obligatorio)
