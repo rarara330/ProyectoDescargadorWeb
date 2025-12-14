@@ -2,7 +2,7 @@
 # Script de Instalación y Configuración Total
 
 USUARIO_WEB="www-data"
-USUARIO_SISTEMA="raul"
+USUARIO_SISTEMA="wolf"
 NUEVA_DIR_DESCARGAS="/var/www/html/Descargas/pepe"
 DIR_BASE="/var/www/ProyectoDescargadorWeb"
 
