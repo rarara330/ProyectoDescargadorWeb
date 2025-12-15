@@ -7,7 +7,7 @@ NUEVA_DIR_DESCARGAS="/var/www/html/Descargas/pepe"
 DIR_BASE="/var/www/ProyectoDescargadorWeb"
 
 echo "==================================================="
-echo "🚀 INICIANDO INSTALACIÓN DE DESCARGADOR V9 NUCLEAR"
+echo "      INICIANDO INSTALACIÓN DEL DESCARGADOR        "
 echo "==================================================="
 
 # 1. Ejecutar dependencias
@@ -38,7 +38,7 @@ echo "$LINEA_SUDO" | sudo tee -a /etc/sudoers > /dev/null
 echo "✅ Sudoers configurado: www-data puede ejecutar mega.sh como root sin contraseña."
 
 echo "====================================================================================="
-echo "🎉 INSTALACIÓN AUTOMÁTICA COMPLETADA."
+echo "🎉 INSTALACIÓN DEL DESCRAGADOR COMPLETADA."
 echo "====================================================================================="
 echo "⚠️ PASO FINAL REQUERIDO: Iniciar sesión en MEGAcmd"
 echo "Para que la subida a MEGA funcione, el usuario '$USUARIO_SISTEMA' debe iniciar sesión."
@@ -46,4 +46,4 @@ echo "Ejecuta lo siguiente, sin sudo y como usuario '$USUARIO_SISTEMA', en tu te
 echo "-------------------------------------------------------------------------------------"
 echo "mega-login"
 echo "-------------------------------------------------------------------------------------"
-echo "Una vez iniciada la sesión, el sistema estará 100% operativo en http://TU_IP/Descargador.php"
+echo "Una vez iniciada la sesión, el sistema estará 100% operativo en http://$(hostname -I | awk '{print $1}')/Descargador.php"
