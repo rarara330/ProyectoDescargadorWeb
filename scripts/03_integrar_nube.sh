@@ -33,5 +33,5 @@ fi
 
 echo "-------------------------------------------------------"
 echo "PROCESO FINALIZADO"
-echo "Recuerda loguearte con: mega-login tu@email.com"
+echo "Recuerda loguearte con: mega-login tu@email.com password"
 echo "-------------------------------------------------------"
