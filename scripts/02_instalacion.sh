@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "---------------------------------------------------------"
-echo "🛠️  INICIANDO FASE 2: Instalación de Herramientas (CORREGIDO)"
+echo "🛠️  INICIANDO FASE 2: Instalación de Herramientas "
 echo "---------------------------------------------------------"
 
 # 1. Actualizar repositorios e instalar utilidades básicas
