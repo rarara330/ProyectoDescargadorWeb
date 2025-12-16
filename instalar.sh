@@ -10,6 +10,15 @@ echo "==================================================="
 echo "      INICIANDO INSTALACIÓN DEL DESCARGADOR        "
 echo "==================================================="
 
+# Instalar Apache y PHP (y la librería que conecta ambos)
+# -y confirma automáticamente las preguntas de "sí/no"
+sudo apt-get install -y apache2 php libapache2-mod-php
+
+#Mover directorio
+sudo mv 
+cd "$(dirname "$0")"
+sudo mv ../ProyectoDescargadorWeb /var/www/
+
 # 1. Ejecutar dependencias
 echo "-> 1. Ejecutando scripts de dependencias y herramientas..."
 bash $DIR_BASE/scripts/01_dependencias.sh
