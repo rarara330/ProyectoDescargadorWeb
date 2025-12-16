@@ -38,16 +38,8 @@ sudo cp $DIR_BASE/codigo_fuente/descargador.php /var/www/html/Descargador.php
 sudo chown $USUARIO_WEB:$USUARIO_WEB /var/www/html/Descargador.php
 echo "✅ Frontend PHP copiado."
 
-# 4. Configurar sudoers para ejecución asíncrona (mega.sh)
-echo "-> 4. Configurando permisos Sudoers para www-data..."
-LINEA_SUDO="www-data ALL=(root) NOPASSWD: $DIR_BASE/codigo_fuente/mega.sh"
-# Elimina líneas anteriores si existen, luego añade la nueva línea
-sudo sed -i '/mega.sh/d' /etc/sudoers
-echo "$LINEA_SUDO" | sudo tee -a /etc/sudoers > /dev/null
-echo "✅ Sudoers configurado: www-data puede ejecutar mega.sh como root sin contraseña."
-
 echo "====================================================================================="
-echo "🎉 INSTALACIÓN DEL DESCRAGADOR COMPLETADA."
+echo "🎉 INSTALACIÓN LOCAL DEL DESCRAGADOR COMPLETADA."
 echo "====================================================================================="
 echo "⚠️ PASO FINAL REQUERIDO: Iniciar sesión en MEGAcmd"
 echo "Para que la subida a MEGA funcione, el usuario '$USUARIO_SISTEMA' debe iniciar sesión."
@@ -55,4 +47,4 @@ echo "Ejecuta lo siguiente, sin sudo y como usuario '$USUARIO_SISTEMA', en tu te
 echo "-------------------------------------------------------------------------------------"
 echo "mega-login"
 echo "-------------------------------------------------------------------------------------"
-echo "Una vez iniciada la sesión, el sistema estará 100% operativo en http://$(hostname -I | awk '{print $1}')/Descargador.php"
+echo "http://$(hostname -I | awk '{print $1}')/Descargador.php"
