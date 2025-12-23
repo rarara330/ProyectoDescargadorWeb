@@ -291,7 +291,7 @@
 
             
 
-            $mega_script_path = "/var/www/ProyectoDescargadorWeb/codigo_fuente/mega.sh"; 
+            $mega_script_path = "/var/www/DescargadorWeb/codigo_fuente/mega.sh"; 
 
             
 
