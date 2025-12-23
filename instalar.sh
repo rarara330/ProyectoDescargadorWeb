@@ -4,7 +4,7 @@
 USUARIO_WEB="www-data"
 USUARIO_SISTEMA="wolf"
 NUEVA_DIR_DESCARGAS="/var/www/html/Descargas"
-DIR_BASE="/var/www/ProyectoDescargadorWeb"
+DIR_BASE="/var/www/DescargadorWeb"
 
 echo "==================================================="
 echo "      INICIANDO INSTALACIÓN DEL DESCARGADOR        "
@@ -16,7 +16,7 @@ sudo apt-get install -y apache2 php libapache2-mod-php
 #Mover directorio
 sudo mv 
 cd "$(dirname "$0")"
-sudo mv ../ProyectoDescargadorWeb /var/www/
+sudo mv ../DescargadorWeb /var/www/
 
 # 1. Ejecutar dependencias
 echo "-> 1. Ejecutando scripts de dependencias y herramientas..."
