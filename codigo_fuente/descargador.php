@@ -213,7 +213,7 @@
 
 
         // DIRECTORIO DE DESCARGAS (Usando la ruta pública acordada)
-        $HOME_DIR = "/var/www/html/Descargas/pepe";
+        $HOME_DIR = "/var/www/html/Descargas";
         
 
         // --- 2. Construcción del Comando ---
@@ -222,7 +222,7 @@
 
             case '1': // YouTube Vídeo
 
-                $output_dir = "$HOME_DIR/Descargas_Web/Videos";
+                $output_dir = "$HOME_DIR/Videos";
 
                 $message = "🎬 Guardando Vídeo MP4 en $output_dir...";
 
@@ -232,7 +232,7 @@
 
             case '2': // YouTube Audio
 
-                $output_dir = "$HOME_DIR/Descargas_Web/Musica";
+                $output_dir = "$HOME_DIR/Musica";
 
                 $message = "🎵 Guardando Audio MP3 en $output_dir...";
 
@@ -242,7 +242,7 @@
 
             case '3': // Spotify
 
-                $output_dir = "$HOME_DIR/Descargas_Web/Spotify";
+                $output_dir = "$HOME_DIR/Spotify";
 
                 $message = "🎧 Guardando Playlist/Canción de Spotify en $output_dir...";
 
