@@ -5,11 +5,11 @@
 # =======================================================
 
 # 1. Variables de Configuración
-LOCAL_DIR="/var/www/html/Descargas/pepe"
-REMOTE_DIR="/pepe"
+LOCAL_DIR="/var/www/html/Descargas"
+REMOTE_DIR="/DescargadorWeb"
 # Asegúrate de que este usuario tenga la sesión de MEGA iniciada (con mega-login)
 USUARIO_REAL="wolf" 
-LOG_FILE="/tmp/mega_upload_pepe_$(date +%Y%m%d_%H%M%S).log"
+LOG_FILE="/tmp/mega_upload_$(date +%Y%m%d_%H%M%S).log"
 
 # 2. Verificación de Superusuario (Obligatorio)
 if [ "$EUID" -ne 0 ]; then
