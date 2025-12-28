@@ -14,7 +14,7 @@ echo "==================================================="
 sudo apt-get install -y apache2 php libapache2-mod-php
 
 #Mover directorio
-sudo mv 
+sudo mv ProyectoDescargadorWeb-main ProyectoDescargadorWeb
 cd "$(dirname "$0")"
 sudo mv ../ProyectoDescargadorWeb /var/www/
 
